@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -45,6 +46,10 @@ public class DemoAnnoController {
 	public @ResponseBody String remove(HttpServletRequest request) {
 		
 		return "url:" + request.getRequestURL() + " can access";
+	}
+	@RequestMapping(value = "/requestBody" ,produces = "application/json;charset=UTF-8")
+	public @ResponseBody DemoObj getPerson(@RequestBody DemoObj obj){
+		return obj;
 	}
 
 }

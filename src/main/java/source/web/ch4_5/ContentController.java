@@ -10,7 +10,7 @@ import source.domain.DemoObj;
 public class ContentController {
     @RequestMapping(value = "/getdemo")
     public String getDemo(Model model){
-        DemoObj demoObj = new DemoObj(333l, "WYF");
+        DemoObj demoObj = new DemoObj("333", "WYF");
         model.addAttribute("demoObj",demoObj);
         return "demoObj";
 

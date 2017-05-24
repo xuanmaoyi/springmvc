@@ -31,7 +31,7 @@ public class MyMessageConverter extends AbstractHttpMessageConverter<DemoObj> {/
 
 		Charset.forName("UTF-8"));
 		String[] tempArr = temp.split("-");
-		return new DemoObj(new Long(tempArr[0]), tempArr[1]);
+		return new DemoObj(tempArr[0], tempArr[1]);
 	}
 	
 	/**

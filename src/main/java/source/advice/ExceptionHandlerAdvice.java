@@ -26,6 +26,6 @@ public class ExceptionHandlerAdvice {
 
 	@InitBinder //4
 	public void initBinder(WebDataBinder webDataBinder) {
-		webDataBinder.setDisallowedFields("id"); //5
+	//	webDataBinder.setDisallowedFields("id"); //5
 	}
 }

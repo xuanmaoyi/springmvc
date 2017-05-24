@@ -81,7 +81,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {// 2
         converters.add(converter());
     }
 	
-	@Bean 
+	@Bean
 	public MyMessageConverter converter(){
 		return new MyMessageConverter();
 	}

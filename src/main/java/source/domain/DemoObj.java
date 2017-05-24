@@ -1,21 +1,22 @@
 package source.domain;
 
 public class DemoObj {
-	private Long id;
+
+	private String id;
 	private String name;
-	
+
 	public DemoObj() {
 		super();
 	}
-	public DemoObj(Long id, String name) {
+	public DemoObj(String id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
-	public Long getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getName() {
